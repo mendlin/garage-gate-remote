@@ -1,0 +1,14 @@
+{
+  "name": "garage-gate-web",
+  "version": "1.0.0",
+  "description": "The web part which will be the UI to control the Arduino. Also includes the data communication (via firebase realtime database). The code should be all running in firebase.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^8.2.1"
+  }
+}

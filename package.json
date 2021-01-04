@@ -1,0 +1,15 @@
+{
+  "name": "garage-gate",
+  "version": "1.0.0",
+  "description": "Johnny-five client code (running on Rasperberry Pi) which controls the servo.",
+  "main": "garage_gate_arduino.js",
+  "dependencies": {
+    "johnny-five": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
