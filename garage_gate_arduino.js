@@ -13,15 +13,16 @@ var firebase = require("firebase");
 var kHeartBeatInterval = 60 * 10; // 10min.
 
 // Initialize Firebase
-var config = {
-  apiKey: "AIzaSyDdDBiaz3lh8RAH1zeNJwRuaYK008JRQ0o",
-  authDomain: "node-with-arduino.firebaseapp.com",
-  databaseURL: "https://node-with-arduino.firebaseio.com",
-  projectId: "node-with-arduino",
-  storageBucket: "",
-  messagingSenderId: "998248645588"
+const firebaseConfig = {
+  apiKey: "AIzaSyBOWhM327ZpJk0hIbxkANPQRpqRClYi1qM",
+  authDomain: "garage-gate-75d0a.firebaseapp.com",
+  databaseURL: "https://garage-gate-75d0a-default-rtdb.firebaseio.com",
+  projectId: "garage-gate-75d0a",
+  storageBucket: "garage-gate-75d0a.appspot.com",
+  messagingSenderId: "203844306865",
+  appId: "1:203844306865:web:1e4654ce522215a2d65f90"
 };
-firebase.initializeApp(config);
+firebase.initializeApp(firebaseConfig);
 
 var database = firebase.database();
 
@@ -47,7 +48,6 @@ function write_heartbeat() {
 
 board.on("ready", function() {
   var servo = new five.Servo(9);
-  var led = new five.Led(13);
 
   servo.min();
 
